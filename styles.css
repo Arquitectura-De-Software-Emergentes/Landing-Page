@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Titillium+Web:wght@600&display=swap");
+
+:root {
+  --yellow-green: #85cb33;
+  --nyanza: #efffc8;
+  --olive-drab-7: #3b341f;
+  --opal: #a5cbc3;
+  --smoky-black: #100b00;
+  --ducky-yellow: #ffc400;
+  --blue-elegant: #1955AE;
+  --share-tech-mono: "Share Tech Mono", monospace;
+  --titillium-web: "Titillium Web", sans-serif;
+  --intro-height: calc(100vh - 80px);
+  --doc-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive */
+
+button.list-active {
+  display: none;
+}
+
+#sidenav {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.intro {
+  height: calc(100vh - 80px);
+}
+
+.intro > .intro-content {
+  position: relative;
+  display: flex;
+  height: 100%;
+}
+
+.intro > .intro-content > .text-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--titillium-web);
+  color: white;
+  position: absolute;
+  z-index: 2;
+}
+
+.intro > .intro-content > .text-container > h1 {
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+}
+
+.intro > .intro-content > .image-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.intro > .intro-content > .image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about-us > h1,
+#services > h1,
+#plans > h1 {
+  font-size: 2.4rem;
+}
+
+#about-us > .content > .text-container,
+#about-us > h1,
+#services > h1,
+#plans > h1 {
+  font-family: var(--titillium-web);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#about-us > .content > .text-container {
+  text-align: left;
+}
+
+#about-us > .content {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 20px;
+}
+
+#about-us > .content > h1.logo-text {
+  width: 50%;
+}
+
+#about-us > .content > .text-container {
+  width: 50%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+}
+
+#about-us > .content > h1.logo-text {
+  font-size: 5rem;
+  text-align: center;
+}
+
+#about-us,
+#plans {
+  padding: 40px;
+  background-color: #f57c36;
+  background-image: linear-gradient(62deg, #f57c36 0%, #ffc400 100%);
+}
+
+#services {
+  padding: 40px;
+  font-family: var(--titillium-web);
+}
+
+#services > p {
+  padding: 0 20%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#services .image-container {
+  display: flex;
+  justify-content: center;
+}
+
+#services .image-container > img {
+  width: 70px;
+}
+
+#services .content {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+#services .content > article {
+  text-align: center;
+}
+
+img.check {
+  width: 20px;
+}
+
+#plans {
+  padding: 40px 0;
+}
+
+#plans .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#plans > h1 {
+  color: white;
+}
+
+#plans > .content {
+  display: flex;
+  justify-content: center;
+}
+
+#plans > .content > section {
+  display: flex;
+  gap: 40px;
+}
